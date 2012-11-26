@@ -5,7 +5,7 @@ noise = load('data/eikonal_avg.mat');
 xnode = noise.xnode;
 ynode = noise.ynode;
 
-selectperiods = 4:15
+selectperiods = 5:15
 pnum = 0;
 for ip = fliplr(selectperiods)
 	pnum = pnum+1;
@@ -26,12 +26,12 @@ for ip = selectperiods
 	tomo(pnum).noise = false;
 end
 
-figure(22)
-clf
-hold on
-ind = find([tomo(:).noise]);
-plot([tomo(ind).period],[tomo(ind).avgphV],'-ro');
-ind = find(~[tomo(:).noise]);
-plot([tomo(ind).period],[tomo(ind).avgphV],'-bo');
-
+%figure(22)
+%clf
+%hold on
+%ind = find([tomo(:).noise]);
+%plot([tomo(ind).period],[tomo(ind).avgphV],'-ro');
+%ind = find(~[tomo(:).noise]);
+%plot([tomo(ind).period],[tomo(ind).avgphV],'-bo');
+%
 save('tomo.mat','tomo','xnode','ynode');
