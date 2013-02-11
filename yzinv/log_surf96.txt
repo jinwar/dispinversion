@@ -1,0 +1,862 @@
+ betmn, betmx:  3.  4.30000019
+ betmn, betmx:  2.58879995  4.2947998
+Dispersion  fit (vel)         std err  :    1.9005 (km/s)
+Dispersion  fit (vel)    mean residual :   -2.7292 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.1365 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.72095% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.1065 km/sec
+ITERATION     1 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    1.0781 (km/s)
+Dispersion  fit (vel)    mean residual :    0.2315 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0484 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.96932% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0331 km/sec
+ITERATION     2 done: UPDATING V
+----------------------------------------------------------------------------
+ betmn, betmx:  2.47880006  4.29710007
+ betmn, betmx:  2.27349997  4.30600023
+ betmn, betmx:  2.27279997  4.33059978
+ betmn, betmx:  2.23510003  4.31459999
+ betmn, betmx:  2.2427001  4.32259989
+ betmn, betmx:  2.23930001  4.3204999
+ betmn, betmx:  2.24169993  4.32229996
+ betmn, betmx:  2.2428  4.32289982
+ betmn, betmx:  2.24469995  4.32399988
+ betmn, betmx:  2.24650002  4.32499981
+ betmn, betmx:  2.24830008  4.32600021
+Dispersion  fit (vel)         std err  :    0.8429 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0104 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0353 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.98207% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0530 km/sec
+ITERATION     3 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.4853 (km/s)
+Dispersion  fit (vel)    mean residual :    0.4322 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0281 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.98934% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0196 km/sec
+ITERATION     4 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.4024 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.4008 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0232 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99186% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0169 km/sec
+ITERATION     5 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.4011 (km/s)
+Dispersion  fit (vel)    mean residual :    0.1288 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0165 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99552% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0060 km/sec
+ITERATION     6 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3866 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0742 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0160 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99609% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0044 km/sec
+ITERATION     7 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3823 (km/s)
+Dispersion  fit (vel)    mean residual :    0.0030 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0154 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99632% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0024 km/sec
+ITERATION     8 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3772 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0209 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0153 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99640% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0022 km/sec
+ITERATION     9 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3735 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0104 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0152 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99648% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0019 km/sec
+ITERATION    10 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3703 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0130 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0151 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99654% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0017 km/sec
+ITERATION    11 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3676 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0111 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0150 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99659% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0015 km/sec
+ITERATION    12 done: UPDATING V
+----------------------------------------------------------------------------
+Disper betmn, betmx:  2.25  4.32690001
+ betmn, betmx:  2.25180006  4.3277998
+ betmn, betmx:  2.25340009  4.32870007
+ betmn, betmx:  2.25489998  4.3295002
+ betmn, betmx:  2.25629997  4.33029985
+ betmn, betmx:  2.25769997  4.33099985
+ betmn, betmx:  2.25889993  4.33169985
+ betmn, betmx:  2.26009989  4.33230019
+ betmn, betmx:  2.26119995  4.33290005
+ betmn, betmx:  2.26220012  4.33339977
+sion  fit (vel)         std err  :    0.3653 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0108 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0150 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99663% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0014 km/sec
+ITERATION    13 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3633 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0095 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0149 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99667% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0013 km/sec
+ITERATION    14 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3616 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0091 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0149 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99670% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0011 km/sec
+ITERATION    15 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3601 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0084 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0148 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99673% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0011 km/sec
+ITERATION    16 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3588 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0073 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0148 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99675% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0010 km/sec
+ITERATION    17 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3577 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0074 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0147 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99677% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0009 km/sec
+ITERATION    18 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3567 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0070 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0147 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99679% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0008 km/sec
+ITERATION    19 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3558 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0061 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0146 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99680% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0008 km/sec
+ITERATION    20 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3551 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0064 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0146 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99682% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0007 km/sec
+ITERATION    21 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3544 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0057 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0146 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99683% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0007 km/sec
+ITERATION    22 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion   betmn, betmx:  2.26309991  4.33389997
+ betmn, betmx:  2.26390004  4.33440018
+ betmn, betmx:  2.26460004  4.33479977
+ betmn, betmx:  2.26530004  4.33519983
+ betmn, betmx:  2.2658999  4.3355999
+ betmn, betmx:  2.2665  4.33599997
+ betmn, betmx:  2.26699996  4.3362999
+ betmn, betmx:  2.26740003  4.33659983
+ betmn, betmx:  2.26789999  4.33690023
+ betmn, betmx:  2.26819992  4.33720016
+fit (vel)         std err  :    0.3538 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0051 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0145 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99684% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0006 km/sec
+ITERATION    23 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3533 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0048 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0145 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99685% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0006 km/sec
+ITERATION    24 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3528 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0049 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0145 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99686% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0006 km/sec
+ITERATION    25 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3524 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0042 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0145 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99686% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0005 km/sec
+ITERATION    26 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3520 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0042 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0145 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99687% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0005 km/sec
+ITERATION    27 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3517 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0036 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0145 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99688% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0005 km/sec
+ITERATION    28 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3513 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0040 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0145 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99689% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0005 km/sec
+ITERATION    29 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3510 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0037 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0145 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99689% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0004 km/sec
+ITERATION    30 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3508 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0027 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0145 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99689% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0004 km/sec
+ITERATION    31 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3505 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0037 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0144 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99690% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0004 km/sec
+ITERATION    32 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (v betmn, betmx:  2.26859999  4.3375001
+ betmn, betmx:  2.26889992  4.33769989
+ betmn, betmx:  2.26920009  4.33790016
+ betmn, betmx:  2.26950002  4.33809996
+ betmn, betmx:  2.26970005  4.33830023
+ betmn, betmx:  2.26990008  4.33850002
+ betmn, betmx:  2.27010012  4.33869982
+ betmn, betmx:  2.27020001  4.33890009
+ betmn, betmx:  2.27040005  4.33909988
+ betmn, betmx:  2.27049994  4.33930016
+el)         std err  :    0.3503 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0026 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0144 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99690% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0004 km/sec
+ITERATION    33 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3501 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0028 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0144 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99691% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0004 km/sec
+ITERATION    34 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3498 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0024 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0144 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99691% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0004 km/sec
+ITERATION    35 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3496 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0027 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0144 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99692% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0003 km/sec
+ITERATION    36 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3494 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0025 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0144 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99692% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0003 km/sec
+ITERATION    37 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3492 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0022 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0144 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99693% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0003 km/sec
+ITERATION    38 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3491 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0018 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0144 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99693% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0003 km/sec
+ITERATION    39 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3489 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0023 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0144 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99693% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0003 km/sec
+ITERATION    40 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3487 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0014 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0144 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99693% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0003 km/sec
+ITERATION    41 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3485 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0020 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0143 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99693% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0003 km/sec
+ITERATION    42 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)    betmn, betmx:  2.27060008  4.33949995
+ betmn, betmx:  2.27069998  4.33970022
+ betmn, betmx:  2.27080011  4.33979988
+ betmn, betmx:  2.27090001  4.33990002
+ betmn, betmx:  2.27099991  4.34000015
+ betmn, betmx:  2.27090001  4.34009981
+ betmn, betmx:  2.27110004  4.34019995
+ betmn, betmx:  2.27099991  4.34030008
+ betmn, betmx:  2.27110004  4.34040022
+ betmn, betmx:  2.27110004  4.34049988
+      std err  :    0.3484 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0016 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0143 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99694% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0003 km/sec
+ITERATION    43 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3482 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0016 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0143 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99694% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0003 km/sec
+ITERATION    44 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3481 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0016 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0143 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99694% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0003 km/sec
+ITERATION    45 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3479 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0016 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0143 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99695% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0003 km/sec
+ITERATION    46 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3478 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0012 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0143 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99695% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0003 km/sec
+ITERATION    47 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3476 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0020 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0143 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99695% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0003 km/sec
+ITERATION    48 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3475 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0008 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0143 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99696% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0003 km/sec
+ITERATION    49 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3474 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0020 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0143 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99696% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    50 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3472 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0003 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0143 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99696% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0003 km/sec
+ITERATION    51 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3471 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0019 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0142 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99696% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    52 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)          betmn, betmx:  2.27119994  4.34060001
+ betmn, betmx:  2.27119994  4.34070015
+ betmn, betmx:  2.27119994  4.34079981
+ betmn, betmx:  2.27119994  4.34089994
+ betmn, betmx:  2.27130008  4.34100008
+ betmn, betmx:  2.27130008  4.34110022
+ betmn, betmx:  2.27130008  4.34119987
+ betmn, betmx:  2.27130008  4.34130001
+ betmn, betmx:  2.27130008  4.34140015
+ betmn, betmx:  2.27130008  4.34149981
+std err  :    0.3470 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0008 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0142 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99696% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    53 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3468 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0016 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0142 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99696% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    54 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3467 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0007 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0142 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99697% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    55 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3466 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0013 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0142 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99697% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    56 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3464 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0008 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0142 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99697% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    57 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3463 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0013 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0142 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99697% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    58 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3462 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0008 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0142 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99698% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    59 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3461 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0011 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0142 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99698% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    60 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3459 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0007 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0142 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99698% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    61 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3458 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0011 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0141 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99699% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    62 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std er betmn, betmx:  2.27119994  4.34159994
+ betmn, betmx:  2.27119994  4.34170008
+ betmn, betmx:  2.27119994  4.34170008
+ betmn, betmx:  2.27130008  4.34180021
+ betmn, betmx:  2.27130008  4.34180021
+ betmn, betmx:  2.27139997  4.34189987
+ betmn, betmx:  2.27139997  4.34189987
+ betmn, betmx:  2.27150011  4.34200001
+ betmn, betmx:  2.27139997  4.34200001
+ betmn, betmx:  2.27150011  4.34210014
+r  :    0.3457 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0011 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0141 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99699% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    63 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3456 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0006 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0141 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99699% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    64 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3455 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0014 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0141 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99699% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    65 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3454 (km/s)
+Dispersion  fit (vel)    mean residual :    0.0000 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0141 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99699% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    66 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3453 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0015 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0141 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99699% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    67 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3452 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0001 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0141 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99699% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    68 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3450 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0014 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0141 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99699% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    69 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3449 (km/s)
+Dispersion  fit (vel)    mean residual :    0.0001 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0141 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99700% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    70 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3448 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0012 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0141 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99700% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    71 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3447 (km/s)
+Dispersion  fit (vel)    mean residual :    0.0002 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0141 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99700% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    72 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :   betmn, betmx:  2.27139997  4.34210014
+ betmn, betmx:  2.27150011  4.3421998
+ betmn, betmx:  2.27150011  4.3421998
+ betmn, betmx:  2.27150011  4.3421998
+ betmn, betmx:  2.27139997  4.3421998
+ betmn, betmx:  2.27139997  4.3421998
+ betmn, betmx:  2.27139997  4.34229994
+ betmn, betmx:  2.27139997  4.34250021
+ betmn, betmx:  2.27139997  4.3427
+ betmn, betmx:  2.27139997  4.3428998
+  0.3446 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0014 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0140 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99700% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    73 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3445 (km/s)
+Dispersion  fit (vel)    mean residual :    0.0003 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0140 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99700% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    74 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3444 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0008 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0140 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99701% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    75 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3443 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0007 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0140 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99701% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    76 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3442 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0008 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0140 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99701% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    77 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3441 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0002 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0140 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99701% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    78 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3440 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0007 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0140 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99702% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    79 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3439 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0002 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0140 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99702% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    80 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3438 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0006 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0140 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99702% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    81 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3437 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0001 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0140 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99702% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    82 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.34 betmn, betmx:  2.27139997  4.34310007
+ betmn, betmx:  2.27150011  4.34329987
+ betmn, betmx:  2.27150011  4.3434
+ betmn, betmx:  2.27150011  4.3435998
+ betmn, betmx:  2.27150011  4.34369993
+ betmn, betmx:  2.27160001  4.3439002
+ betmn, betmx:  2.27160001  4.34399986
+ betmn, betmx:  2.27160001  4.34420013
+ betmn, betmx:  2.27160001  4.34429979
+ betmn, betmx:  2.27160001  4.34439993
+36 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0006 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0140 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99702% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    83 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3435 (km/s)
+Dispersion  fit (vel)    mean residual :    0.0000 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0140 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99702% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    84 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3434 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0010 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0140 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99702% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    85 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3433 (km/s)
+Dispersion  fit (vel)    mean residual :    0.0001 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0140 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99702% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    86 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3432 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0006 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0140 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99702% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    87 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3432 (km/s)
+Dispersion  fit (vel)    mean residual :    0.0000 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0140 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99703% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    88 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3431 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0008 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0140 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99703% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    89 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3430 (km/s)
+Dispersion  fit (vel)    mean residual :    0.0002 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0140 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99703% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    90 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3429 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0004 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0140 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99703% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    91 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3428 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0001 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0139 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99703% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    92 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3427 (km betmn, betmx:  2.27160001  4.34450006
+ betmn, betmx:  2.27169991  4.3446002
+ betmn, betmx:  2.27180004  4.34469986
+ betmn, betmx:  2.27180004  4.34490013
+ betmn, betmx:  2.27189994  4.34499979
+ betmn, betmx:  2.27189994  4.34509993
+ betmn, betmx:  2.27200007  4.3453002
+ betmn, betmx:  2.27200007  4.34539986
+ betmn, betmx:  2.27200007  4.34560013
+/s)
+Dispersion  fit (vel)    mean residual :   -0.0001 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0139 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99704% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    93 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3426 (km/s)
+Dispersion  fit (vel)    mean residual :    0.0000 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0139 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99704% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    94 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3425 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0005 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0139 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99704% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    95 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3424 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0001 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0139 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99704% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    96 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3423 (km/s)
+Dispersion  fit (vel)    mean residual :    0.0002 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0139 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99705% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    97 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3422 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0008 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0139 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99705% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    98 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3422 (km/s)
+Dispersion  fit (vel)    mean residual :    0.0005 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0139 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99705% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION    99 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3421 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0005 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0139 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99705% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION   100 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3420 (km/s)
+Dispersion  fit (vel)    mean residual :    0.0004 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0139 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99705% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION   101 done: UPDATING V
+----------------------------------------------------------------------------
+Dispersion  fit (vel)         std err  :    0.3419 (km/s)
+Dispersion  fit (vel)    mean residual :   -0.0001 (km/s)
+Dispersion  fit (vel)    avg |residual|:    0.0139 (km/s)
+Percent of Signal Power Fit (Disp)     :  99.99705% for   22 SW Obs
+RMS change in S-wave velocity model    :   0.0002 km/sec
+ITERATION   102 done: UPDATING V
+----------------------------------------------------------------------------
+V  Model Weighting Parameters: Large value forces change at boundary or layer   
+  I   DD(I) Inv S     depth/range          I   DD(I) Inv S     depth/range
+--------------------------------------------------------------------------------
+  1   10.00 Bdy 1      5.00             | 13    1.00 Bdy 1     65.00            
+  2    1.00 Bdy 1     10.00             | 14    1.00 Bdy 1     70.00            
+  3    1.00 Bdy 1     15.00             | 15    1.00 Bdy 1     75.00            
+  4    1.00 Bdy 1     20.00             | 16    1.00 Bdy 1     80.00            
+  5    1.00 Bdy 1     25.00             | 17    1.00 Bdy 1     85.00            
+  6    1.00 Bdy 1     30.00             | 18    1.00 Bdy 1     90.00            
+  7    1.00 Bdy 1     35.00             | 19    1.00 Bdy 1     95.00            
+  8    1.00 Bdy 1     40.00             | 20    1.00 Bdy 1    100.00            
+  9    1.00 Bdy 1     45.00             | 21    1.00 Bdy 1    110.00            
+ 10    1.00 Bdy 1     50.00             | 22    1.00 Bdy 1    130.00            
+ 11    1.00 Bdy 1     55.00             | 23    1.00 Lyr 1    130.00-   9999.00 
+ 12    1.00 Bdy 1     60.00             |                                       
+--------------------------------------------------------------------------------
+ Bdy - get velocity change at boundary
+ Lyr - get velocity in layer
+ S =0 Vp fixed, S=1 Vp/Vs fixed in layer
+ Use option 30 to change how Vp obtained
+ Use option 31 to change layer weight
+ Use option 48 to change layer smoothing
+ Use option 45 to redisplay this menu
+      Mode        Period       Observed      Predicted Observed Sigma
+ R C    0      6.6666999      2.5843000      2.5946615      0.0500000
+ R C    0      6.9342999      2.6531999      2.6370409      0.0500000
+ R C    0      7.2242999      2.7116001      2.6824005      0.0500000
+ R C    0      7.5397000      2.7195001      2.7304134      0.0500000
+ R C    0      7.8838000      2.7427001      2.7804635      0.0500000
+ R C    0      8.2608995      2.8361001      2.8317187      0.0500000
+ R C    0      8.6758003      2.8652999      2.8831191      0.0500000
+ R C    0      9.1345997      2.9328001      2.9336135      0.0500000
+ R C    0      9.6447001      2.9865999      2.9823332      0.0500000
+ R C    0     10.2151003      3.0510001      3.0287895      0.0500000
+ R C    0     10.8570995      3.1001999      3.0730114      0.0500000
+ R C    0     11.5853996      3.1069000      3.1155863      0.0500000
+ R C    0     12.4182997      3.1729000      3.1575947      0.0500000
+ R C    0     13.3802996      3.2032001      3.2006378      0.0500000
+ R C    0     14.5038004      3.2225001      3.2467875      0.0500000
+ R C    0     15.8332996      3.2806001      3.2985427      0.0500000
+ R C    0     17.4312000      3.3446000      3.3585074      0.0500000
+ R C    0     20.0000000      3.4719999      3.4492073      0.0500000
+ R C    0     25.0000000      3.5880001      3.5889800      0.0500000
+ R C    0     32.0000000      3.7026000      3.6968606      0.0500000
+ R C    0     40.0000000      3.7558999      3.7528241      0.0500000
+ R C    0     50.0000000      3.7774000      3.7869341      0.0500000

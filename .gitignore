@@ -1,4 +1,6 @@
 data
 dispcurves
+pics
 *.mat
-
+*.grd
+recf
