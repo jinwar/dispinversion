@@ -3,4 +3,9 @@ dispcurves
 pics
 *.mat
 *.grd
+*dsp
+sobs.d
+*.mod
+temp
+tmp*
 recf

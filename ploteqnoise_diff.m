@@ -4,21 +4,21 @@ noise = load('../matnoise/raytomo.mat');
 xnode = noise.xnode;
 ynode = noise.ynode;
 
-selectperiods = 15
+selectperiods = 3
 ip=selectperiods;
 tomo(1).phV = noise.raytomo(ip).GV;
 tomo(1).period = noise.raytomo(ip).period;
 tomo(1).avgphV = nanmean(tomo(1).phV(:));
 tomo(1).noise = true;
 
-selectperiods = 0
+selectperiods = 1
+eqdata = load('data/eikonal_stack.mat');
 for ip = selectperiods
-	filename = sprintf('data/averageevent_%d.mat',ip);
-	eqdata = load(filename);
-	tomo(2).phV = eqdata.newisoGV;
-	tomo(2).period = eqdata.periods(ip+1);
-	tomo(2).avgphV = nanmean(tomo(2).phV(:));
-	tomo(2).noise = false;
+	pnum = 2;
+	tomo(pnum).phV = eqdata.avgphv(ip).GV;
+	tomo(pnum).period = eqdata.avgphv(ip).period;
+	tomo(pnum).avgphV = nanmean(tomo(pnum).phV(:));
+	tomo(pnum).noise = false;
 end
 
 load seiscmap

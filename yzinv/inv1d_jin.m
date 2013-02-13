@@ -28,25 +28,33 @@ region(3).name = 'northern';
 region(1).color = 'r';
 region(2).color = 'b';
 region(3).color = 'k';
-region(1).crusth = 25;
-region(1).crustv = 3.7;
-region(1).mantlev = 4.3;
-region(1).sedh = 10;
-region(1).sedv = 3;
-region(2).crusth = 35;
-region(2).crustv = 3.7;
-region(2).mantlev = 4.3;
-region(2).sedh = 10;
-region(2).sedv = 3;
 
-for ir = 1:2
+region(1).initmod.sedh = 10;
+region(1).initmod.sedv = 3;
+region(1).initmod.crusth = 25;
+region(1).initmod.crustv = 3.7;
+region(1).initmod.mantlev = 4.3;
+
+region(2).initmod.crusth = 35;
+region(2).initmod.crustv = 3.7;
+region(2).initmod.mantlev = 4.3;
+region(2).initmod.sedh = 10;
+region(2).initmod.sedv = 3;
+
+region(3).initmod.crusth = 60;
+region(3).initmod.crustv = 3.7;
+region(3).initmod.mantlev = 4.5;
+region(3).initmod.sedh = 5;
+region(3).initmod.sedv = 2.;
+
+for ir = 1:3
     % load data
     
-    vec_vs=region(ir).crustv*ones(size(vec_h));
-    mantleind = find(depth > region(ir).crusth)-1;
-    vec_vs(mantleind) = region(ir).mantlev;
-    sedind = find(depth < region(ir).sedh);
-    vec_vs(sedind) = region(ir).sedv;
+    vec_vs=region(ir).initmod.crustv*ones(size(vec_h));
+    mantleind = find(depth > region(ir).initmod.crusth)-1;
+    vec_vs(mantleind) = region(ir).initmod.mantlev;
+    sedind = find(depth < region(ir).initmod.sedh);
+    vec_vs(sedind) = region(ir).initmod.sedv;
     vec_vp=vec_vs*1.9;
     vec_rho=2.7*ones(size(vec_h));
     vec_rho(mantleind)=3.3;
@@ -93,7 +101,7 @@ hold on;
 %     h = plotlayermods(region(ir).startmod(:,1),region(ir).startmod(:,3),'--');
 %     set(h,'linewidth',2,'color',region(ir).color);
 % end
-for ir=1:2
+for ir=1:3
     h = plotlayermods(region(ir).outmod(:,1),region(ir).outmod(:,3));
     set(h,'linewidth',2,'color',region(ir).color);
 end
@@ -105,14 +113,14 @@ legend('Rift Model','Mainland Model','Location','SouthWest');
 ylabel('Depth (km)','fontsize',fsize);
 xlabel('Shear Velocity (km/s)','fontsize',fsize);
 set(gca,'fontsize',fsize)
-export_fig(['pics/',region(1).name,'_',region(2).name,'_mod'],'-transparent','-m2');
+% export_fig(['pics/',region(1).name,'_',region(2).name,'_mod'],'-transparent','-m2');
 
 
 % plot disp curve fitting
 figure(2)
 clf
 hold on;
-for ir=1:2
+for ir=1:3
     modh(ir)=plot(region(ir).vec_T,region(ir).phv_fwd,'--','color',region(ir).color,'linewidth',2);
     obsh(ir)=plot(region(ir).vec_T,region(ir).phv,'x','color',region(ir).color,'linewidth',2,'markersize',fsize);
     xlabel('Period (s)','fontsize',fsize);
@@ -121,5 +129,5 @@ for ir=1:2
     set(gca,'fontsize',fsize)
 end
 legend('Rift Model Prediction','Rift Observation','Mainland Model Prediction','Mainland Observation','Location','SouthEast');
-export_fig(['pics/',region(1).name,'_',region(2).name,'_dispfit'],'-transparent','-m2');
+% export_fig(['pics/',region(1).name,'_',region(2).name,'_dispfit'],'-transparent','-m2');
 

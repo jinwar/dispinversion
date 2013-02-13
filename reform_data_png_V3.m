@@ -15,12 +15,12 @@ for ip = fliplr(selectperiods)
 	tomo(pnum).noise = true;
 end
 
-selectperiods = 0:4
+selectperiods = 1:5
 eqdata = load('data/eikonal_stack.mat');
 for ip = selectperiods
 	pnum = pnum+1;
-	tomo(pnum).phV = eqdata.avgphv.GV;
-	tomo(pnum).period = eqdata.avgphv.periods;
+	tomo(pnum).phV = eqdata.avgphv(ip).GV;
+	tomo(pnum).period = eqdata.avgphv(ip).period;
 	tomo(pnum).avgphV = nanmean(tomo(pnum).phV(:));
 	tomo(pnum).noise = false;
 end

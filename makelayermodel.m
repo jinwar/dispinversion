@@ -5,7 +5,7 @@ load dispcurves/island.mat
 
 vec_T=dispcurve.periods;
 %h_mantle=20.0;
-vpvs = 1.9;
+vpvs = 1.8;
 %depth=[0;cumsum(refmod1(:,1))];
 vec_h = [20 10 20 20];
 vec_vp = [6.5 7.5 5.7 8.1];
