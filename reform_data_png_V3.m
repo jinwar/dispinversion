@@ -1,6 +1,6 @@
 clear;
 
-noise = load('../matnoise/eikonal_avg.mat');
+noise = load('../matnoise/raytomo.mat');
 
 xnode = noise.xnode;
 ynode = noise.ynode;
@@ -9,8 +9,8 @@ selectperiods = 3:14
 pnum = 0;
 for ip = fliplr(selectperiods)
 	pnum = pnum+1;
-	tomo(pnum).phV = noise.avgtomo(ip).GV;
-	tomo(pnum).period = noise.periods(ip);
+	tomo(pnum).phV = noise.raytomo(ip).GV;
+	tomo(pnum).period = noise.raytomo(ip).period;
 	tomo(pnum).avgphV = nanmean(tomo(pnum).phV(:));
 	tomo(pnum).noise = true;
 end

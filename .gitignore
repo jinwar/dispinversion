@@ -4,6 +4,7 @@ pics
 *.mat
 *.grd
 *dsp
+*.txt
 sobs.d
 *.mod
 temp

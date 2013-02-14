@@ -40,6 +40,8 @@ for ilat = 1:Nlat
 		end
 		[minerr mini] = min(err);
 		regmap(ilat,ilon) = mini;
+%		mini = 2;
+		regmap(ilat,ilon) = mini;
 		initmodel = region(mini).outmod;
 		h_crust=-1;
 		waterdepth=0;
