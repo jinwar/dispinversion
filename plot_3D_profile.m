@@ -2,7 +2,7 @@ clear;
 
 load 3Dinv_result
 load seiscmap
-
+load tomo
 
 [xi yi] = ndgrid(xnode,ynode);
 lalim = [min(xnode) max(xnode)];
@@ -18,7 +18,7 @@ figure(23)
 clf
 ax = worldmap(lalim, lolim);
 set(ax, 'Visible', 'off')
-h1=surfacem(xi,yi,regmap);
+h1=surfacem(xi,yi,errmat);
 drawpng
 [mlat mlon] = inputm(2);
 plotm(mlat,mlon,'k','linewidth',3);
@@ -52,7 +52,7 @@ plot(topo_lons,topo,'k','linewidth',2);
 xlim([min(xaxis) max(xaxis)])
 
 subplot('position',[0.1 0.1 0.8 0.7])
-contourf(xaxis,depth_prof,vel_prof);
+contourf(xaxis,depth_prof,vel_prof,50);
 shading flat
 colormap(seiscmap)
 colorbar('south');

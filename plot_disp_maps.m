@@ -6,7 +6,7 @@ load seiscmap
 [xi yi] = ndgrid(xnode,ynode);
 lalim = [min(xnode) max(xnode)];
 lolim = [min(ynode) max(ynode)];
-r = 0.1;
+r = 0.05;
 figure(65)
 clf
 Ncol = 5; Nrow = floor(length(tomo)/Ncol)+1;
