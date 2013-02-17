@@ -5,7 +5,7 @@ noise = load('../matnoise/raytomo.mat');
 xnode = noise.xnode;
 ynode = noise.ynode;
 
-selectperiods = 3:14
+selectperiods = 5:14
 pnum = 0;
 for ip = fliplr(selectperiods)
 	pnum = pnum+1;
