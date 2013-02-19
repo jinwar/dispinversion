@@ -1,11 +1,15 @@
 clear;
 
+noise_period = [9 18];
+eq_period = [20 70];
+
 noise = load('../matnoise/raytomo.mat');
 
 xnode = noise.xnode;
 ynode = noise.ynode;
 
-selectperiods = 5:14
+periods = [noise.raytomo(:).period];
+selectperiods = find(periods >= noise_period(1) & periods <= noise_period(2));
 pnum = 0;
 for ip = fliplr(selectperiods)
 	pnum = pnum+1;
@@ -15,8 +19,11 @@ for ip = fliplr(selectperiods)
 	tomo(pnum).noise = true;
 end
 
-selectperiods = 1:5
+
 eqdata = load('data/eikonal_stack.mat');
+periods = [eqdata.avgphv(:).period];
+selectperiods = find(periods >= eq_period(1) & periods <= eq_period(2));
+
 for ip = selectperiods
 	pnum = pnum+1;
 	tomo(pnum).phV = eqdata.avgphv(ip).GV;
