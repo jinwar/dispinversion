@@ -28,6 +28,7 @@ plotm(mlat,mlon,'kx','linewidth',3,'markersize',10);
 [temp ilat] = min(abs(mlat - xnode));
 [temp ilon] = min(abs(mlon - ynode));
 vel_mod = shearV3D(:,ilat,ilon);
+init_mod = initV3D(:,ilat,ilon);
 phv_fwd = phV3D(:,ilat,ilon);
 periods = [tomo(:).period];
 
@@ -39,8 +40,11 @@ phv_fwd(find(phv_fwd==0))=NaN;
 
 figure(24)
 clf
+hold on
 h = plotlayermods(vec_h(:),vel_mod(:));
 set(h,'linewidth',2,'color','b');
+h = plotlayermods(vec_h(:),init_mod(:));
+set(h,'linewidth',2,'color','k');
 xlim([ 2 5])
 
 figure(25)

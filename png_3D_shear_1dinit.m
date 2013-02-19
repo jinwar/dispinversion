@@ -65,7 +65,7 @@ for ilat = 1:Nlat
 		misfit = (phv_fwd(:)-phv(:));
 		rms=sqrt(sum(misfit.^2)/length(velT))
 		shearV3D(:,ilat,ilon) = outmod(:,3);
-		initV3D(:,ilat,ilon) = initmodel;
+		initV3D(:,ilat,ilon) = initmodel(:,3);
 		if length(phv_fwd) == length(periods)
 			phV3D(:,ilat,ilon) = phv_fwd(:);
 		else
