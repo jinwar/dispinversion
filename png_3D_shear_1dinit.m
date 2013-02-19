@@ -33,9 +33,11 @@ initmod.model(:,4) = vec_rho(:);
 [Nlat Nlon] = size(tomo(1).phV);
 Ndepth = size(initmod.model,1);
 shearV3D = zeros(Ndepth,Nlat,Nlon);
+initV3D = zeros(Ndepth,Nlat,Nlon);
 regmap = zeros(Nlat,Nlon);
 errmat = zeros(Nlat,Nlon);
 periods = [tomo.period];
+phV3D = zeros(length(periods),Nlat,Nlon);
 
 make_par_surf96('R');
 
@@ -63,6 +65,14 @@ for ilat = 1:Nlat
 		misfit = (phv_fwd(:)-phv(:));
 		rms=sqrt(sum(misfit.^2)/length(velT))
 		shearV3D(:,ilat,ilon) = outmod(:,3);
+		initV3D(:,ilat,ilon) = initmodel;
+		if length(phv_fwd) == length(periods)
+			phV3D(:,ilat,ilon) = phv_fwd(:);
+		else
+			for ip = 1:length(velT)
+				phV3D(find(velT(ip) == periods),ilat,ilon) = phv_fwd(ip);
+			end
+		end
 		errmat(ilat,ilon) = rms;
 		regmat(ilat,ilon) = 1;
 	end
@@ -73,7 +83,7 @@ lalim = [min(xnode) max(xnode)];
 lolim = [min(ynode) max(ynode)];
 depth_prof = vec_z;
 
-save 3Dinv_result shearV3D errmat xnode ynode depth_prof regmap
+save 3Dinv_result shearV3D errmat xnode ynode depth_prof regmap phV3D vec_h initV3D
 
 figure(48)
 clf
