@@ -16,7 +16,7 @@ load png_topo
 
 shearV3D = permute(shearV3D,[2 3 1]);
 
-depths = 1:10:120;
+depths = 5:10:120;
 
 figure(86)
 clf
@@ -41,4 +41,5 @@ ax = worldmap(lalim, lolim);
 set(ax, 'Visible', 'off')
 h1=surfacem(xi,yi,errmat);
 drawpng
-
+caxis([0 0.1])
+colorbar
