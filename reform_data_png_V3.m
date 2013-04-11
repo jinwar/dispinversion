@@ -3,7 +3,7 @@ clear;
 noise_period = [9 18];
 eq_period = [20 70];
 
-noise = load('../matnoise/raytomo.mat');
+noise = load('data/raytomo.mat');
 
 xnode = noise.xnode;
 ynode = noise.ynode;

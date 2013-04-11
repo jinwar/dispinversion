@@ -1,3 +1,4 @@
+function [outmodel phv_fwd]= invdispR(vec_T,phv,phvstd,grv,grvstd,startmodel,h_crust,waterdepth,varargin)
 % INVERT 1D velocity model from Rayleigh wave dispersion, using SURF96
 % INVERT FOR SHEAR VELOCITY AND KEEP THICKNESS FIXED
 % ALSO KEEP VP/VS FIXED, DENSITY FROM VP 
@@ -18,8 +19,10 @@
 %OUTPUT: 
 %	outmodel: inveted 1D model nlayer x 3 array of data:
 %	disp_fwd: predicted dispersion of final inverted model.
-function [outmodel phv_fwd]= invdispR(vec_T,phv,phvstd,grv,grvstd,startmodel,h_crust,waterdepth,varargin)
-
+%
+%	modified by Ge Jin, jinwar@gmail.com
+%	2013-02-21
+%
 %Created by Yang Zha 09/27/2012
 % modified 10/17/2012 to include density in model
 
@@ -126,14 +129,15 @@ end
 display('Start inversion....');
 display(['do ', num2str(niteration), ' iterations ..']);
 
-system('surf96 32 10 > log_surf96.txt');
+system('surf96 32 2 > log_surf96.txt');
 system('surf96 37 2 1 2 6 >> log_surf96.txt');
 %####
 %	do 10 inversions
 %####
 display('Writing log file..');
 
-system('surf96 32 2 >> log_surf96.txt');
+% seting dampping factor
+system('surf96 32 1 >> log_surf96.txt');
 
 cmdtemp=['surf96 37 ',num2str(niteration),' 1 2 6 >> log_surf96.txt'];
 system(cmdtemp);

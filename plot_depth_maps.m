@@ -29,6 +29,11 @@ for idep = 1:length(depths)
 	ax = worldmap(lalim, lolim);
 	set(ax, 'Visible', 'off')
 	h1=geoshow(xi,yi,vmap,'displaytype','texturemap');
+	if nanmean(vmap(:)) > 4
+		caxis([4 4.5])
+	else
+		caxis([3 4])
+	end
 	drawpng
 	colorbar
 	title([num2str(depth_prof(depind)),' km'])
