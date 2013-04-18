@@ -53,7 +53,7 @@ N=5;
 color_ind = round(linspace(40,1,N+1));
 colors = seiscmap(color_ind,:);
 alphas = linspace(0.1,1,N);
-for i=3:N
+for i=4:N
 	hpatch = patch(isosurface(xi3,yi3,zi3,rela_vel_3D,-i/100));
 %	isonormals(xi3,yi3,zi3,rela_vel_3D,hpatch);
 	set(hpatch,'FaceColor',colors(i+1,:),'EdgeColor','none','FaceAlpha',0.1)

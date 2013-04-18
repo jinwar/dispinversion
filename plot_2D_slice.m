@@ -51,7 +51,7 @@ for idep = 1:length(depth_prof)
 end
 rela_vel_prof = rela_vel_prof - 1;
 
-rela_vel_prof(find(vel_prof < 4)) = NaN;
+rela_vel_prof(find(vel_prof < 3.5)) = NaN;
 
 ind = find(vel_prof == 0);
 vel_prof(ind) = NaN;

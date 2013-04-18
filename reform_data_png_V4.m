@@ -14,7 +14,7 @@ selectperiods = find(periods >= noise_period(1) & periods <= noise_period(2));
 pnum = 0;
 for ip = fliplr(selectperiods)
 	pnum = pnum+1;
-	tomo(pnum).phV = noise.raytomo(ip).GV;
+	tomo(pnum).phV = smoothmap_avg(noise.raytomo(ip).GV,1);
 	tomo(pnum).period = noise.raytomo(ip).period;
 	tomo(pnum).avgphV = nanmean(tomo(pnum).phV(:));
 	tomo(pnum).noise = true;
@@ -27,7 +27,7 @@ selectperiods = find(periods >= eq_period(1) & periods <= eq_period(2));
 
 for ip = selectperiods
 	pnum = pnum+1;
-	tomo(pnum).phV = eqdata.avgphv(ip).GV;
+	tomo(pnum).phV = smoothmap_avg(eqdata.avgphv(ip).GV,1);
 	tomo(pnum).period = eqdata.avgphv(ip).period;
 	tomo(pnum).avgphV = nanmean(tomo(pnum).phV(:));
 	tomo(pnum).noise = false;

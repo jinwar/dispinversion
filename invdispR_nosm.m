@@ -1,4 +1,4 @@
-function [outmodel phv_fwd]= invdispR_nosm(vec_T,phv,phvstd,grv,grvstd,startmodel,h_crust,waterdepth,varargin)
+function [outmodel phv_fwd]= invdispR(vec_T,phv,phvstd,grv,grvstd,startmodel,h_crust,waterdepth,varargin)
 % INVERT 1D velocity model from Rayleigh wave dispersion, using SURF96
 % INVERT FOR SHEAR VELOCITY AND KEEP THICKNESS FIXED
 % ALSO KEEP VP/VS FIXED, DENSITY FROM VP 
@@ -96,7 +96,7 @@ ind_sf = find(abs(vec_z-waterdepth)==min(abs(vec_z-waterdepth))); % find layer n
 %
 display('Setting smoohting profile...');
 
-system('surf96 36 1'); % set smoothign type
+system('surf96 36 0'); % set smoothign type
 
 cmdtemp = ['surf96 31 ',num2str(ind_sf),' 10']; % large change at seafloor
 system(cmdtemp);
