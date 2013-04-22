@@ -14,22 +14,40 @@ moho = load('data/moho.mat');
 [xi yi] = ndgrid(xnode,ynode);
 topo = interp2(grdxi,grdyi,grdtopo,xi,yi);
 
-initmod.crustv = 3.4;
-initmod.mantlev = 4.3;
-initmod.sedh = [2];
-initmod.sedv = 2.5;
-vpvs = 1.8;
-depth = [0:2:10, 12:2:40, 45:5:100, 110:20:150];
-vec_h = diff(depth);
-vec_z = depth(2:end);
+% Define search parameters:
+sedh = [1 3 5];
+sedv = [2 2.5 3];
+crusth_ratio = [0.9 1 1.1];
+crustv = [3.4 3.5 3.6];
+mantlev = [4.1 4.3 4.5];
 
+paranum = 0;
+for isedh = 1:length(sedh)
+	for isedv = 1:length(sedv)
+		for icrusth = 1:length(crusth_ratio)
+			for icrustv = 1:length(crustv)
+				for imantlev = 1:length(mantlev)
+					paranum = paranum+1;
+					paraind(:,paranum) = [isedh; isedv; icrusth; icrustv; imantlev];
+				end
+			end
+		end
+	end
+end
+
+vpvs = 1.8;
 
 [Nlat Nlon] = size(tomo(1).phV);
-Ndepth = length(vec_h);
-shearV3D = zeros(Ndepth,Nlat,Nlon);
-initV3D = zeros(Ndepth,Nlat,Nlon);
 regmap = zeros(Nlat,Nlon);
-errmat = zeros(Nlat,Nlon);
+sedhmap = zeros(Nlat,Nlon);
+sedvmap = zeros(Nlat,Nlon);
+crustvmap = zeros(Nlat,Nlon);
+crusthmap = zeros(Nlat,Nlon);
+ori_crusthmap = zeros(Nlat,Nlon);
+
+mantlevmap = zeros(Nlat,Nlon);
+
+errmap = zeros(Nlat,Nlon);
 periods = [tomo.period];
 phV3D = zeros(length(periods),Nlat,Nlon);
 
@@ -54,16 +72,22 @@ for ilat = 1:Nlat
 		grv = [];
 		grvstd = [];
 		% prepare the initial model
-		initmod.crusth = interp2(moho.xi,moho.yi,moho.mohodepth,xi(ilat,ilon),yi(ilat,ilon));
-		vec_vs = initmod.crustv*ones(size(vec_h));
-		mantleind = find(depth > initmod.crusth)-1;
-		vec_vs(mantleind) = initmod.mantlev;
-		vec_rho=2.7*ones(size(vec_h));
-		vec_rho(mantleind)=3.3;
-		for ised = 1:length(initmod.sedh)
-			sedind = find(depth < initmod.sedh(ised));
-			vec_vs(sedind) = initmod.sedv;
-			vec_vp=vec_vs*vpvs;
+		crusth = interp2(moho.xi,moho.yi,moho.mohodepth,xi(ilat,ilon),yi(ilat,ilon));
+		if isnan(crusth)
+			continue;
+		end
+		tic
+		for ipara = 1:size(paraind,2)
+			vec_h(1) = sedh(paraind(1,ipara));
+			vec_vs(1) = sedv(paraind(2,ipara));
+			vec_rho(1) = 2.7;
+			vec_h(2) = crusth * crusth_ratio(paraind(3,ipara));
+			vec_vs(2) = crustv(paraind(4,ipara));
+			vec_rho(2) = 2.7;
+			vec_h(3) = 100;
+			vec_vs(3) = mantlev(paraind(5,ipara));
+			vec_rho(3) = 3.3;
+			vec_vp = vec_vs.*vpvs;
 			initmod.model(:,1) = vec_h(:);
 			initmod.model(:,2) = vec_vp(:);
 			initmod.model(:,3) = vec_vs(:);
@@ -75,55 +99,50 @@ for ilat = 1:Nlat
 			else
 				waterdepth = 0;
 			end
-			err(ised) = disperr(velT,phv,phvstd,grv,grvstd,initmodel);
+			err(ipara) = disperr(velT,phv,phvstd,grv,grvstd,initmodel);
 		end
+		toc
 		[minerr mini] = min(err);
-		sedind = find(depth < initmod.sedh(mini));
-		vec_vs(sedind) = initmod.sedv;
-		vec_vp=vec_vs*vpvs;
+		fprintf('Sedh: %4.1f Sedv: %4.1f ',sedh(paraind(1,mini)),sedv(paraind(2,mini)));
+		fprintf('crusth: %4.1f crustv: %4.1f ',crusth_ratio(paraind(3,mini)),crustv(paraind(4,mini)));
+		fprintf('mantlev: %4.1f ',mantlev(paraind(5,mini)));
+		fprintf('MinErr: %4.3f \n ',minerr);
+		initmodmap(ilat,ilon) = mini;
+		sedhmap(ilat,ilon) = sedh(paraind(1,mini));
+		sedvmap(ilat,ilon) = sedv(paraind(2,mini));
+		crusthmap(ilat,ilon) = crusth*crusth_ratio(paraind(3,mini));
+		crustvmap(ilat,ilon) = crustv(paraind(4,mini));
+		mantlevmap(ilat,ilon) = mantlev(paraind(5,mini));
+		errmap(ilat,ilon) = minerr;
+		ori_crusthmap(ilat,ilon) = crusth;
 		
 		h_crust=-1;
-%		[outmod phv_fwd] = invdispR_nosm(velT,phv,phvstd,grv,grvstd,initmodel,h_crust,waterdepth,5)
-		[outmod phv_fwd] = invdispR(velT,phv,phvstd,grv,grvstd,initmodel,h_crust,waterdepth,10)
-		misfit = (phv_fwd(:)-phv(:));
-		rms=sqrt(sum(misfit.^2)/length(velT))
-		if waterdepth > 0
-			shearV3D(:,ilat,ilon) = outmod(2:end,3);
-			initV3D(:,ilat,ilon) = initmodel(2:end,3);
-%			pause
-		else
-			shearV3D(:,ilat,ilon) = outmod(:,3);
-			initV3D(:,ilat,ilon) = initmodel(:,3);
-		end
-		if length(phv_fwd) == length(periods)
-			phV3D(:,ilat,ilon) = phv_fwd(:);
-		else
-			for ip = 1:length(velT)
-				phV3D(find(velT(ip) == periods),ilat,ilon) = phv_fwd(ip);
-			end
-		end
-		errmat(ilat,ilon) = rms;
-		regmap(ilat,ilon) = initmod.sedh(mini);
 	end
 end
 
+save 3Dinitmod ...
+		sedh sedv crusth_ratio crustv mantlev ...
+		initmodmap sedhmap sedvmap crusthmap crustvmap mantlevmap ori_crusthmap errmap...
+		xi yi
+
+%
 [xi yi] = ndgrid(xnode,ynode);
 lalim = [min(xnode) max(xnode)];
 lolim = [min(ynode) max(ynode)];
-depth_prof = vec_z;
-
-save 3Dinv_result shearV3D errmat xnode ynode depth_prof regmap phV3D vec_h initV3D
-
-figure(48)
-clf
-ax = worldmap(lalim, lolim);
-set(ax, 'Visible', 'off')
-h1=surfacem(xi,yi,errmat);
-drawpng
-figure(49)
-clf
-ax = worldmap(lalim, lolim);
-set(ax, 'Visible', 'off')
-h1=surfacem(xi,yi,regmap);
-drawpng
+%depth_prof = vec_z;
+%
+%save 3Dinv_result shearV3D errmat xnode ynode depth_prof regmap phV3D vec_h initV3D
+%
+%figure(48)
+%clf
+%ax = worldmap(lalim, lolim);
+%set(ax, 'Visible', 'off')
+%h1=surfacem(xi,yi,errmat);
+%drawpng
+%figure(49)
+%clf
+%ax = worldmap(lalim, lolim);
+%set(ax, 'Visible', 'off')
+%h1=surfacem(xi,yi,regmap);
+%drawpng
 toc
