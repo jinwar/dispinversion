@@ -1,7 +1,7 @@
 clear;
 
-noise_period = [9 18];
-eq_period = [20 70];
+noise_period = [10 18];
+eq_period = [23 70];
 eq_avg_period = [70 120];
 
 noise = load('data/raytomo.mat');

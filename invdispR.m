@@ -1,4 +1,4 @@
-function [outmodel phv_fwd]= invdispR_nosm(vec_T,phv,phvstd,grv,grvstd,startmodel,h_crust,waterdepth,varargin)
+function [outmodel phv_fwd]= invdispR(vec_T,phv,phvstd,grv,grvstd,startmodel,h_crust,waterdepth,varargin)
 % INVERT 1D velocity model from Rayleigh wave dispersion, using SURF96
 % INVERT FOR SHEAR VELOCITY AND KEEP THICKNESS FIXED
 % ALSO KEEP VP/VS FIXED, DENSITY FROM VP 
@@ -98,24 +98,29 @@ display('Setting smoohting profile...');
 
 system('surf96 36 1'); % set smoothign type
 
-cmdtemp = ['surf96 31 ',num2str(ind_sf),' 10']; % large change at seafloor
-system(cmdtemp);
+if waterdepth > 0
+%	cmdtemp = ['surf96 31 ',num2str(ind_sf),' 10']; % large change at seafloor
+%	system(cmdtemp);
+	cmdtemp = ['surf96 48 ',1,' 0']; % turn off the smoothing at that boundary
+	system(cmdtemp);
+end
 
 if(h_crust>0)
 	ind_moho = find(abs(vec_z-mohodepth)==min(abs(vec_z-mohodepth))); % find layer number correspinding to moho depth
-	
-	for il = ind_sf+1:ind_moho-2
-		cmdtemp = ['surf96 31 ',num2str(il),' 1']; % higher change permitted in crust;
-		system(cmdtemp);
-	end
-	
-	for il = ind_moho-1:ind_moho+1
-		cmdtemp = ['surf96 31 ',num2str(il),' 5']; % even higher change permitted near moho;
-		system(cmdtemp);
-	end
-	
-	cmdtemp=['surf96 31 ',num2str(nl),' 1']; % make weight of bottom layer =  (no constrain at all)
-	%system(cmdtemp);
+	cmdtemp = ['surf96 48 ',num2str(ind_moho),' 0']; % turn off the smoothing at that boundary
+	system(cmdtemp);
+%	for il = ind_sf+1:ind_moho-2
+%		cmdtemp = ['surf96 31 ',num2str(il),' 1']; % higher change permitted in crust;
+%		system(cmdtemp);
+%	end
+%	
+%	for il = ind_moho-1:ind_moho+1
+%		cmdtemp = ['surf96 31 ',num2str(il),' 5']; % even higher change permitted near moho;
+%		system(cmdtemp);
+%	end
+%	
+%	cmdtemp=['surf96 31 ',num2str(nl),' 1']; % make weight of bottom layer =  (no constrain at all)
+%	%system(cmdtemp);
 	
 end
 
@@ -129,7 +134,7 @@ end
 display('Start inversion....');
 display(['do ', num2str(niteration), ' iterations ..']);
 
-system('surf96 32 2 > log_surf96.txt');
+system('surf96 32 1 > log_surf96.txt');
 system('surf96 37 2 1 2 6 >> log_surf96.txt');
 %####
 %	do 10 inversions

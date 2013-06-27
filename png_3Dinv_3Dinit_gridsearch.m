@@ -16,10 +16,10 @@ topo = interp2(grdxi,grdyi,grdtopo,xi,yi);
 
 % Define search parameters:
 sedh = [1 3 5];
-sedv = [2 2.5 3];
-crusth_ratio = [0.9 1 1.1];
+sedv = [2.5];
+crusth_ratio = [1];
 crustv = [3.4 3.5 3.6];
-mantlev = [4.1 4.3 4.5];
+mantlev = [4.3 4.5];
 
 paranum = 0;
 for isedh = 1:length(sedh)
@@ -81,7 +81,7 @@ for ilat = 1:Nlat
 			vec_h(1) = sedh(paraind(1,ipara));
 			vec_vs(1) = sedv(paraind(2,ipara));
 			vec_rho(1) = 2.7;
-			vec_h(2) = crusth * crusth_ratio(paraind(3,ipara));
+			vec_h(2) = crusth * crusth_ratio(paraind(3,ipara)) - sedh(paraind(1,ipara));
 			vec_vs(2) = crustv(paraind(4,ipara));
 			vec_rho(2) = 2.7;
 			vec_h(3) = 100;

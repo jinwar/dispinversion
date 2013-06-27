@@ -31,6 +31,8 @@ vel_mod = shearV3D(:,ilat,ilon);
 init_mod = initV3D(:,ilat,ilon);
 phv_fwd = phV3D(:,ilat,ilon);
 periods = [tomo(:).period];
+vec_h = diff(depth_prof);
+vec_h(end+1) = vec_h(end);
 
 for ip = 1:length(tomo)
 	phv(ip) = tomo(ip).phV(ilat,ilon);
@@ -41,10 +43,10 @@ phv_fwd(find(phv_fwd==0))=NaN;
 figure(24)
 clf
 hold on
-h = plotlayermods(vec_h(:),vel_mod(:));
-set(h,'linewidth',2,'color','b');
 h = plotlayermods(vec_h(:),init_mod(:));
 set(h,'linewidth',2,'color','k');
+h = plotlayermods(vec_h(:),vel_mod(:));
+set(h,'linewidth',2,'color','b');
 xlim([ 2 5])
 
 figure(25)

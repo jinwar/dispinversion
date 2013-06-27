@@ -20,8 +20,11 @@ ax = worldmap(lalim, lolim);
 set(ax, 'Visible', 'off')
 h1=surfacem(xi,yi,errmat);
 drawpng
+caxis([0 0.1])
+colorbar
 [mlat mlon] = inputm(2);
 plotm(mlat,mlon,'k','linewidth',3);
+
 
 N = round(distance(mlat(1),mlon(1),mlat(2),mlon(2))/0.1);
 
@@ -70,6 +73,7 @@ colormap(seiscmap)
 colorbar('south');
 xlim([min(xaxis) max(xaxis)])
 axis ij
+caxis([3 4.7])
 
 figure(25)
 clf

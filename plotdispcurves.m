@@ -16,5 +16,5 @@ xlabel('Periods (s)','fontsize',20);
 ylabel('Phase Velocity (km/s)','fontsize',20);
 set(gca,'fontsize',15)
 
-export_fig(filename,'-transparent','-png','-m2')
+%export_fig(filename,'-transparent','-png','-m2')
 

@@ -1,4 +1,4 @@
-function err = disperr(periods,phv,phvstd,grv,grvstd,initmodel)
+function [err phv_fwd] = disperr(periods,phv,phvstd,grv,grvstd,initmodel)
 
 % Write model file
 writemod_surf96(initmodel,'start.mod');
@@ -29,5 +29,7 @@ data = load('temp');
 err = sum((data(:,2)-data(:,1)).^2./data(:,3));
 err = err ./sum(1./data(:,3));
 err = err.^0.5;
+
+phv_fwd = data(:,2);
 
 end
