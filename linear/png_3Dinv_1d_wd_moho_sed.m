@@ -9,7 +9,7 @@ clear
 tic
 load tomo.mat
 load png_topo.mat
-moho = load('data/moho.mat');
+moho = load('data/moho_cor.mat');
 
 [xi yi] = ndgrid(xnode,ynode);
 topo = interp2(grdxi,grdyi,grdtopo,xi,yi);

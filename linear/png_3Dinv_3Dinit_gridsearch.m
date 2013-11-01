@@ -9,7 +9,7 @@ clear
 tic
 load tomo.mat
 load png_topo.mat
-moho = load('data/moho.mat');
+moho = load('data/moho_cor.mat');
 
 [xi yi] = ndgrid(xnode,ynode);
 topo = interp2(grdxi,grdyi,grdtopo,xi,yi);
@@ -18,8 +18,8 @@ topo = interp2(grdxi,grdyi,grdtopo,xi,yi);
 sedh = [1 3 5];
 sedv = [2.5];
 crusth_ratio = [1];
-crustv = [3.4 3.5 3.6];
-mantlev = [4.3 4.5];
+crustv = [3.5 3.6 3.7];
+mantlev = [4.1 4.3 4.5];
 
 paranum = 0;
 for isedh = 1:length(sedh)

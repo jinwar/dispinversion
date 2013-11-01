@@ -16,7 +16,8 @@ load png_topo
 
 shearV3D = permute(shearV3D,[2 3 1]);
 
-depths = 5:10:120;
+depths = 10:10:120;
+r = 0.1;
 
 figure(86)
 clf
@@ -29,11 +30,12 @@ for idep = 1:length(depths)
 	ax = worldmap(lalim, lolim);
 	set(ax, 'Visible', 'off')
 	h1=geoshow(xi,yi,vmap,'displaytype','texturemap');
-	if nanmean(vmap(:)) > 4
-		caxis([4 4.5])
-	else
-		caxis([3 4])
-	end
+%	if nanmean(vmap(:)) > 4
+%		caxis([4 4.5])
+%	else
+%		caxis([3 4])
+%	end
+	caxis(nanmean(vmap(:))*[1-r 1+r]);
 	drawpng
 	colorbar
 	title([num2str(depth_prof(depind)),' km'])

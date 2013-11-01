@@ -23,7 +23,11 @@ drawpng
 caxis([0 0.1])
 colorbar
 [mlat mlon] = inputm(2);
-plotm(mlat,mlon,'k','linewidth',3);
+%mlat = [-9.4744 -9.7132];
+%mlon = [149.22 150.93];
+plotm(mlat,mlon,'r','linewidth',3);
+filename = ['pics/shear2Dslice_errmap.png'];
+%export_fig(filename,'-transparent','-png','-m2')
 
 
 N = round(distance(mlat(1),mlon(1),mlat(2),mlon(2))/0.1);
@@ -62,18 +66,23 @@ vel_prof(ind) = NaN;
 xaxis = prof_lons;
 figure(24)
 clf
-subplot('position',[0.1 0.8 0.8 0.15])
-plot(topo_lons,topo,'k','linewidth',2);
-xlim([min(xaxis) max(xaxis)])
+%subplot('position',[0.1 0.8 0.8 0.15])
+%plot(topo_lons,topo,'k','linewidth',2);
+%xlim([min(xaxis) max(xaxis)])
 
-subplot('position',[0.1 0.1 0.8 0.7])
+%subplot('position',[0.1 0.1 0.8 0.7])
 contourf(xaxis,depth_prof,vel_prof,50);
 shading flat
 colormap(seiscmap)
 colorbar('south');
 xlim([min(xaxis) max(xaxis)])
+text(min(xaxis),-3,'W','fontsize',20)
+text(max(xaxis)-0.05,-3,'E','fontsize',20)
 axis ij
-caxis([3 4.7])
+caxis([3.5 4.4])
+filename = ['pics/shear2Dslice.png'];
+%export_fig(filename,'-transparent','-png','-m2')
+
 
 figure(25)
 clf

@@ -32,7 +32,8 @@ for idep = 1:length(depth_prof)
 	rela_vel_3D(:,:,idep) = depthV3D(:,:,idep) ./ avgV(idep);
 end
 
-rela_vel_3D(:,:,find(avgV<4)) = NaN;
+start_depth = 35;
+rela_vel_3D(:,:,find(depth_prof<start_depth)) = NaN;
 rela_vel_3D(find(rela_vel_3D == 0)) = NaN;
 rela_vel_3D = rela_vel_3D-1;
 
@@ -47,23 +48,25 @@ coastlon(ind) = NaN;
 figure(87)
 clf
 hold on
-depth = ones(size(coastlat))*30;
-plot3(coastlat,coastlon,depth,'k')
-N=5;
+depth = ones(size(coastlat))*start_depth;
+plot3(coastlat,coastlon,depth,'g','linewidth',3)
+N=10;
 color_ind = round(linspace(40,1,N+1));
 colors = seiscmap(color_ind,:);
 alphas = linspace(0.1,1,N);
-for i=4:N
+for i=3:N
 	hpatch = patch(isosurface(xi3,yi3,zi3,rela_vel_3D,-i/100));
 %	isonormals(xi3,yi3,zi3,rela_vel_3D,hpatch);
-	set(hpatch,'FaceColor',colors(i+1,:),'EdgeColor','none','FaceAlpha',0.1)
+%	set(hpatch,'FaceColor',colors(i+1,:),'EdgeColor','none','FaceAlpha',0.1)
+	set(hpatch,'FaceColor','r','EdgeColor','none','FaceAlpha',min([0.2*i,1]))
 end
+
 %hpatch = patch(isosurface(xi3,yi3,zi3,rela_vel_3D,0.03));
 %set(hpatch,'FaceColor',[0 0 1],'EdgeColor','none')
 %hpatch = patch(isosurface(xi3,yi3,zi3,rela_vel_3D,+0.03));
 %set(hpatch,'FaceColor','b','EdgeColor','none')
-view([-60 45])
-% view([-45 30])
+view([-17 40])
+%view([-76 40])
 set(gcf,'Renderer','zbuffer'); 
 camlight left
 camlight right
@@ -75,9 +78,11 @@ grid on
 
 xlim(lalim)
 ylim(lolim)
-zlim([0 120])
-colorbar
-colormap(seiscmap)
-caxis([-N/100,N/100])
+zlim([start_depth 120])
+%colorbar
+%colormap(seiscmap)
+%caxis([-N/100,N/100])
+filename = ['pics/shear3Dvolumne_EW.png'];
+%export_fig(filename,'-transparent','-png','-m2')
 
 rotate3d on
