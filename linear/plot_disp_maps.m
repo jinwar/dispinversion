@@ -2,7 +2,7 @@ clear;
 
 load tomo.mat
 load seiscmap
-moho = load('data/moho_cor.mat');
+moho = load('data/moho_pick.mat');
 
 [xi yi] = ndgrid(xnode,ynode);
 lalim = [min(xnode) max(xnode)];
@@ -31,7 +31,7 @@ clf
 ax = worldmap(lalim, lolim);
 set(ax, 'Visible', 'off')
 % 	geoshow(xi,yi,tomo(ip).phV,'displaytype','texturemap');
-surfacem(moho.xi,moho.yi,moho.mohodepth);
+surfacem(moho.yi,moho.xi,moho.moho_surf);
 colormap(seiscmap)
 drawpng
 colorbar

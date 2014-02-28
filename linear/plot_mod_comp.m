@@ -1,10 +1,14 @@
-function plot_disp_fit();
-
+clear
 load 3Dinv_result
 load 3Dinitmod
 load seiscmap
 load tomo
 load mode_cards
+amor = load('models/rajmodel/AMOR_200km.txt');
+epr = load('models/rajmodel/EPR_200km.txt');
+eaf = load('models/rajmodel/EAFRI_200km.txt');
+chili = load('models/rajmodel/CHILI_200km.txt');
+prem = load('models/jimmodel/prem');
 
 [xi yi] = ndgrid(xnode,ynode);
 lalim = [min(xnode) max(xnode)];
@@ -29,6 +33,7 @@ if exist('mlat','var')
 	plotm(mlat,mlon,'kx','linewidth',3,'markersize',10);
 end
 [mlat mlon bot] = inputm(1);
+disp([num2str(mlat),' ',num2str(mlon)]);
 if bot == 'q'
 	break;
 end
@@ -51,16 +56,27 @@ phv_fwd(find(phv_fwd==0))=NaN;
 figure(24)
 clf
 hold on
-h = plotlayermods(vec_h(:),init_mod(:));
-set(h,'linewidth',2,'color','k');
+set(gcf,'position',[100 300 300 500]);
+%h = plotlayermods(vec_h(:),init_mod(:));
+%set(h,'linewidth',2,'color','k');
+%plot(amor(:,4),-amor(:,1),'c--','linewidth',2);
 h = plotlayermods(vec_h(:),vel_mod(:));
-set(h,'linewidth',2,'color','b');
-plot([0 5],-[crusthmap(ilat,ilon) crusthmap(ilat,ilon)],'r--');
+set(h,'linewidth',2,'color','k');
+ind = find(epr(:,1)>30);
+plot(epr(ind,4),-epr(ind,1),'r--','linewidth',2);
+plot(prem.mod(:,2),-prem.mod(:,1),'g--','linewidth',2);
+plot(chili(ind,4),-chili(ind,1),'b--','linewidth',2);
+%plot(eaf(:,4),-eaf(:,1),'m--','linewidth',2);
+legend('This Study','East Pacific Rise','PREM','Chili Subduction','location','southwest');
+%plot(card(7).SV(:),-card(7).deps(:,1),'r--','linewidth',2);
+%plot([0 5],-[crusthmap(ilat,ilon) crusthmap(ilat,ilon)],'r--');
 xlim([ 2 5])
+ylim([-120 0])
 
 figure(25)
 clf
 hold on
 plot(periods,phv_fwd,'--','color','b','linewidth',2);
 plot(periods,phv,'x','color','k','linewidth',2,'markersize',10);
+
 end

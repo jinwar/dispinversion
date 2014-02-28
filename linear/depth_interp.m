@@ -7,7 +7,7 @@ vec_vs = [vec_vs(1);vec_vs(:)];
 out_vs = zeros(size(depth_prof));
 
 for id = 1:length(depth_prof)
-	islarge = depth_prof(id) < vec_dep;
+	islarge = depth_prof(id) <= vec_dep;
 	ind = find(islarge,1);
 	if ~isempty(ind)
 		out_vs(id) = vec_vs(ind);

@@ -9,17 +9,22 @@ clear
 tic
 load tomo.mat
 load png_topo.mat
-moho = load('data/moho_cor.mat');
+moho = load('data/moho_pick.mat');
 
 [xi yi] = ndgrid(xnode,ynode);
 topo = interp2(grdxi,grdyi,grdtopo,xi,yi);
 
 % Define search parameters:
-sedh = [1 3 5];
+%sedh = [1 3 5];
+%sedv = [2.5];
+%crusth_ratio = [1];
+%crustv = [3.5 3.6 3.7];
+%mantlev = [4.1 4.3 4.5];
+sedh = [2 4];
 sedv = [2.5];
-crusth_ratio = [1];
-crustv = [3.5 3.6 3.7];
-mantlev = [4.1 4.3 4.5];
+crusth_ratio = [1.0];
+crustv = [3.4 3.5 3.6];
+mantlev = [4.3 4.5 4.7];
 
 paranum = 0;
 for isedh = 1:length(sedh)
@@ -72,7 +77,7 @@ for ilat = 1:Nlat
 		grv = [];
 		grvstd = [];
 		% prepare the initial model
-		crusth = interp2(moho.xi,moho.yi,moho.mohodepth,xi(ilat,ilon),yi(ilat,ilon));
+		crusth = interp2(moho.yi',moho.xi',moho.moho_surf',xi(ilat,ilon),yi(ilat,ilon));
 		if isnan(crusth)
 			continue;
 		end

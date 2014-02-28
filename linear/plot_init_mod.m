@@ -32,7 +32,7 @@ title('Crustal Thickness')
 colormap(seiscmap);
 colorbar
 drawpng
-caxis([20 36])
+caxis([20 40])
 subplot(2,2,2)
 ax = worldmap(lalim, lolim);
 surfacem(xi,yi,ori_crusthmap);
@@ -40,7 +40,7 @@ title('Crustal Thickness')
 colormap(seiscmap);
 colorbar
 drawpng
-caxis([20 36])
+caxis([20 40])
 
 subplot(2,2,4)
 ax = worldmap(lalim, lolim);

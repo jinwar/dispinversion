@@ -1,5 +1,4 @@
 
-
 clear
 
 load 3Dinitmod
@@ -8,12 +7,11 @@ load png_topo.mat
 load tomo.mat
 
 
-sedlayernum = 2;
+sedlayernum = 1;
 crustlayernum = 4;
 mantle_layer_thickness = [10*ones(1,10)];
 vpvs = 1.8;
-crusthmap = crusthmap*0.8;
-depth_prof = [2:2:10, 12:2:40, 45:5:100, 110:20:150];
+depth_prof = [1:1:50, 55:5:100, 110:20:150];
 
 [xi yi] = ndgrid(xnode,ynode);
 topo = interp2(grdxi,grdyi,grdtopo,xi,yi);
@@ -83,6 +81,7 @@ for ilat = 1:m
 				waterdepth = 0;
 			end
 			h_crust = crusthmap(ilat,ilon);
+			h_crust = -1;
 			[outmod phv_fwd] = invdispR(velT,phv,phvstd,grv,grvstd,initmodel,h_crust,waterdepth,10);
 			misfit = (phv_fwd(:)-phv(:));
 			rms=sqrt(sum(misfit.^2)/length(velT))
@@ -101,6 +100,15 @@ for ilat = 1:m
 			vec_h = outmod(:,1);
 			vec_vs = outmod(:,3);
 			shearV3D(:,ilat,ilon) = depth_interp(depth_prof,vec_h,vec_vs);
+%             figure(68)
+%             clf
+%             hold on
+%             plotlayermods(vec_h,vec_vs);
+%             h = plotlayermods([diff(depth_prof) 10],shearV3D(:,ilat,ilon));
+%             set(h,'color','r');
+%             plot([2 5],-[crusthmap(ilat,ilon) crusthmap(ilat,ilon)],'k--');
+%             pause
+       
 			final_errmap(ilat,ilon) = rms;
 			if length(phv_fwd) == length(periods)
 				phV3D(:,ilat,ilon) = phv_fwd(:);

@@ -69,6 +69,8 @@ view([-17 40])
 %view([-76 40])
 set(gcf,'Renderer','zbuffer'); 
 camlight; lighting phong
+camlight left; 
+camlight right; 
 set(gca,'zdir','reverse')
 axis ij
 box on

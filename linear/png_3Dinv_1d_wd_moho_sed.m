@@ -9,16 +9,16 @@ clear
 tic
 load tomo.mat
 load png_topo.mat
-moho = load('data/moho_cor.mat');
+moho = load('data/moho_pick.mat');
 
 [xi yi] = ndgrid(xnode,ynode);
 topo = interp2(grdxi,grdyi,grdtopo,xi,yi);
 
 initmod.crustv = 3.4;
 initmod.mantlev = 4.3;
-initmod.sedh = [2];
+initmod.sedh = [3];
 initmod.sedv = 2.5;
-vpvs = 1.8;
+vpvs = 1.732;
 depth = [0:2:10, 12:2:40, 45:5:100, 110:20:150];
 vec_h = diff(depth);
 vec_z = depth(2:end);
@@ -54,7 +54,7 @@ for ilat = 1:Nlat
 		grv = [];
 		grvstd = [];
 		% prepare the initial model
-		initmod.crusth = interp2(moho.xi,moho.yi,moho.mohodepth,xi(ilat,ilon),yi(ilat,ilon));
+		initmod.crusth = interp2(moho.yi',moho.xi',moho.moho_surf',xi(ilat,ilon),yi(ilat,ilon));
 		vec_vs = initmod.crustv*ones(size(vec_h));
 		mantleind = find(depth > initmod.crusth)-1;
 		vec_vs(mantleind) = initmod.mantlev;
@@ -82,11 +82,14 @@ for ilat = 1:Nlat
 		vec_vs(sedind) = initmod.sedv;
 		vec_vp=vec_vs*vpvs;
 		
-		h_crust=-1;
+		h_crust=initmod.crusth;
 %		[outmod phv_fwd] = invdispR_nosm(velT,phv,phvstd,grv,grvstd,initmodel,h_crust,waterdepth,5)
-		[outmod phv_fwd] = invdispR(velT,phv,phvstd,grv,grvstd,initmodel,h_crust,waterdepth,10)
+		[outmod phv_fwd] = invdispR(velT,phv,phvstd,grv,grvstd,initmodel,h_crust,waterdepth,10);
 		misfit = (phv_fwd(:)-phv(:));
 		rms=sqrt(sum(misfit.^2)/length(velT))
+		if size(outmod,1) ~=size(initmodel,1)
+			continue;
+		end
 		if waterdepth > 0
 			shearV3D(:,ilat,ilon) = outmod(2:end,3);
 			initV3D(:,ilat,ilon) = initmodel(2:end,3);

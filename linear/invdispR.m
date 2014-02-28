@@ -101,12 +101,12 @@ system('surf96 36 1'); % set smoothign type
 if waterdepth > 0
 %	cmdtemp = ['surf96 31 ',num2str(ind_sf),' 10']; % large change at seafloor
 %	system(cmdtemp);
-	cmdtemp = ['surf96 48 ',1,' 0']; % turn off the smoothing at that boundary
+	cmdtemp = ['surf96 48 1 0']; % turn off the smoothing at that boundary
 	system(cmdtemp);
 end
 
 if(h_crust>0)
-	ind_moho = find(abs(vec_z-mohodepth)==min(abs(vec_z-mohodepth))); % find layer number correspinding to moho depth
+	ind_moho = find(abs(vec_z-mohodepth)==min(abs(vec_z-mohodepth))) - 1 ; % find layer number correspinding to moho depth
 	cmdtemp = ['surf96 48 ',num2str(ind_moho),' 0']; % turn off the smoothing at that boundary
 	system(cmdtemp);
 %	for il = ind_sf+1:ind_moho-2
