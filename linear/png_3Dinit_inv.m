@@ -81,7 +81,7 @@ for ilat = 1:m
 				waterdepth = 0;
 			end
 			h_crust = crusthmap(ilat,ilon);
-			h_crust = -1;
+%			h_crust = -1;
 			[outmod phv_fwd] = invdispR(velT,phv,phvstd,grv,grvstd,initmodel,h_crust,waterdepth,10);
 			misfit = (phv_fwd(:)-phv(:));
 			rms=sqrt(sum(misfit.^2)/length(velT))

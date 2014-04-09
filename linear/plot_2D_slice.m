@@ -14,6 +14,7 @@ grdtopo=double(grdtopo');
 save png_topo.mat grdtopo grdxi grdyi
 load png_topo
 
+while 1
 figure(23)
 clf
 ax = worldmap(lalim, lolim);
@@ -22,7 +23,14 @@ h1=surfacem(xi,yi,errmat);
 drawpng
 caxis([0 0.1])
 colorbar
-[mlat mlon] = inputm(2);
+if exist('mlat','var')
+	plotm(mlat,mlon,'r','linewidth',3);
+end
+
+[mlat mlon bot] = inputm(2);
+if bot(1) == 'q'
+	break;
+end
 %mlat = [-9.4744 -9.7132];
 %mlon = [149.22 150.93];
 plotm(mlat,mlon,'r','linewidth',3);
@@ -79,7 +87,7 @@ xlim([min(xaxis) max(xaxis)])
 text(min(xaxis),-3,'W','fontsize',20)
 text(max(xaxis)-0.05,-3,'E','fontsize',20)
 axis ij
-caxis([3.5 4.4])
+caxis([3.2 4.8])
 filename = ['pics/shear2Dslice.png'];
 %export_fig(filename,'-transparent','-png','-m2')
 
@@ -99,3 +107,4 @@ xlim([min(xaxis) max(xaxis)])
 axis ij
 caxis([-0.1 0.1]);
 
+end

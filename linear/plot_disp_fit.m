@@ -32,6 +32,7 @@ end
 if bot == 'q'
 	break;
 end
+disp([num2str(mlat),',',num2str(mlon)]);
 
 [temp ilat] = min(abs(mlat - xnode));
 [temp ilon] = min(abs(mlon - ynode));

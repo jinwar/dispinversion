@@ -13,7 +13,7 @@ clf
 set(gcf,'color',[1 1 1])
 Ncol = 4; Nrow = floor(length(tomo)/Ncol)+1;
 %Ncol = 4; Nrow = floor(length(tomo)/Ncol/2)+1;
-for ip = 1:1:length(tomo)-1
+for ip = 1:1:length(tomo)
 	subplot(Nrow,Ncol,floor(ip))
 	ax = worldmap(lalim, lolim);
 	set(ax, 'Visible', 'off')

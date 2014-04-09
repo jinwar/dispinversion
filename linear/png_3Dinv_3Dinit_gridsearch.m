@@ -14,17 +14,18 @@ moho = load('data/moho_pick.mat');
 [xi yi] = ndgrid(xnode,ynode);
 topo = interp2(grdxi,grdyi,grdtopo,xi,yi);
 
+setup_parameters;
 % Define search parameters:
 %sedh = [1 3 5];
 %sedv = [2.5];
 %crusth_ratio = [1];
 %crustv = [3.5 3.6 3.7];
 %mantlev = [4.1 4.3 4.5];
-sedh = [2 4];
-sedv = [2.5];
-crusth_ratio = [1.0];
-crustv = [3.4 3.5 3.6];
-mantlev = [4.3 4.5 4.7];
+sedh = parameters.sedh;
+sedv = parameters.sedv;
+crusth_ratio = parameters.crusth_ratio;
+crustv = parameters.crustv;
+mantlev = parameters.mantlev;
 
 paranum = 0;
 for isedh = 1:length(sedh)

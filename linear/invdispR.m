@@ -86,7 +86,7 @@ vec_z=cumsum(startmodel(:,1)); % convert from layer thickness to depth
 
 nl=length(startmodel(:,1)); % number of layers
 
-mohodepth=waterdepth+h_crust; % mooho depth
+mohodepth=waterdepth+h_crust; % moho depth
 
 ind_sf = find(abs(vec_z-waterdepth)==min(abs(vec_z-waterdepth))); % find layer number correspinding to seafloor
 
@@ -106,7 +106,7 @@ if waterdepth > 0
 end
 
 if(h_crust>0)
-	ind_moho = find(abs(vec_z-mohodepth)==min(abs(vec_z-mohodepth))) - 1 ; % find layer number correspinding to moho depth
+	ind_moho = find(abs(vec_z-mohodepth)==min(abs(vec_z-mohodepth))); % find layer number correspinding to moho depth
 	cmdtemp = ['surf96 48 ',num2str(ind_moho),' 0']; % turn off the smoothing at that boundary
 	system(cmdtemp);
 %	for il = ind_sf+1:ind_moho-2
